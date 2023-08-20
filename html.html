@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<script>
+    var cc=1
+    function change(){
+        if(cc==1){
+            cc=0;
+            document.getElementById("bulbon").src="C:\\Users\\DELL\\Downloads\\bulboff.png"
+            document.body.style.background = "yellow";
+        }
+
+        else{
+            cc=1;
+            document.getElementById("bulbon").src="C:\\Users\\DELL\\Downloads\\bulbon.png"
+            document.body.style.background = "black";
+        }
+    }
+</script>
+<style>
+    div{
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+    div img{
+        
+        width: 15%;
+    }
+    div p{
+        color: aliceblue;
+        background-color: black;
+        border-radius: 12%;
+        padding: 20px;
+    }
+
+</style>
+</head>
+<body bgcolor="black">
+<div>
+
+    <img src="C:\Users\DELL\Downloads\bulbon.png" id="bulbon" alt="bulb-on" >
+    </div>
+    <div>
+    <p onclick="change()" id="switch">turnon/turnoff</p>
+</div>
+</body>
+</html>
